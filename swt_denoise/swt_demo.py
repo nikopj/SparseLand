@@ -10,7 +10,7 @@ from pywt import threshold, coeffs_to_array, array_to_coeffs
 def main():
 	# we load a small image so computations are more managable
 	# params to change:
-	wname = 'db5'	
+	wname = 'db5'
 	levels = 4
 	img_file = 'barbara.tiff'
 	noise_std = 0.1
@@ -213,7 +213,7 @@ def PSNRCurve(recon, z, y, path=None):
 		mse = MSE(y, yhat)
 		if mse < eps_min:
 			mse = eps_min
-		psnr[i] = PSNR(mse)	
+		psnr[i] = PSNR(mse)
 	rel_frac = frac*num/y.size
 
 	if path is not None:
